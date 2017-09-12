@@ -1,0 +1,17 @@
+echo Please input file name
+
+read filename
+
+if [ ! -e $filename ]
+then
+    echo 'No file to throw away'
+fi
+if [ -e $filename ]
+then
+    if [ ! -d ~/trash ]
+    then 
+        mkdir ~/trash
+    fi
+    mv $filename ~/trash/$filename
+fi
+
