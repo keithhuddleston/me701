@@ -3,4 +3,4 @@ echo Please input a temperature in degrees Fahrenheit.
 read tempf
 
 echo print\(\($tempf-32\)\*5/9\) | python
-
+echo print\(\($tempf+459.67\)\*5/9\) | python
